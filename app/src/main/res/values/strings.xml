@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">My Wallpaper</string>
     <string name="setwallpaper"> SET WALLPAPER</string>
+    <string name="hint">Search Your Items Here</string>
+
 
 </resources>
