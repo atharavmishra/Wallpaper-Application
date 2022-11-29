@@ -23,6 +23,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -34,12 +35,13 @@ import java.util.Arrays;
 public class setwallpaperactivity extends AppCompatActivity {
     Intent intent;
     ImageView imageview;
+    ImageButton back;
     Button button;
     private static final int CHOOSE_IMAGE = 22;
     String[] options = new String[]{
-            "Home Screen",
-            "Lock Screen",
-            "Both"
+            "Set As Home Screen",
+            "Set As Lock Screen",
+            "Set As Both"
     };
     private Button btnSetWallpaper;
 
@@ -54,9 +56,18 @@ public class setwallpaperactivity extends AppCompatActivity {
         setContentView(R.layout.activity_setwallpaperactivity);
         getSupportActionBar().hide();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        back = findViewById(R.id.back);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         button = findViewById(R.id.button);
+
         imageview = findViewById(R.id.imageview);
         intent = getIntent();
         String url = intent.getStringExtra("image");

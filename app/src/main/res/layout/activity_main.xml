@@ -73,6 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Nature"
+                android:fontFamily="@font/fonts"
                 android:textColor="#00FFFF"></TextView>
         </com.google.android.material.card.MaterialCardView>
             <com.google.android.material.card.MaterialCardView
@@ -89,7 +90,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Blackhole"
+                    android:text="@string/cardview3"
+                    android:fontFamily="@font/fonts"
+
                     android:textColor="#00FFFF"></TextView>
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
@@ -114,6 +117,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Space"
+                    android:fontFamily="@font/fonts"
+
                     android:textColor="#00FFFF"></TextView>
             </com.google.android.material.card.MaterialCardView>
 
@@ -131,6 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/fonts"
                     android:text="Cars"
                     android:textColor="#00FFFF"></TextView>
             </com.google.android.material.card.MaterialCardView>

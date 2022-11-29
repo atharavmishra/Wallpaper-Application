@@ -23,7 +23,10 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<srcClass> arraylist;
     private RecyclerView recyclerview;
     Adapter adapter;
-    CardView mblackhole;
+    CardView mSunset;
+    CardView mNature;
+    CardView mSpace;
+    CardView mCars;
     EditText edittext;
     ImageButton img;
 
@@ -34,7 +37,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
         recyclerview= findViewById(R.id.recyclerview);
-        mblackhole=findViewById(R.id.cardview3);
+        mNature=findViewById(R.id.cardview1);
+        mSpace=findViewById(R.id.cardview2);
+        mSunset=findViewById(R.id.cardview3);
+        mCars=findViewById(R.id.cardview4);
         edittext = findViewById(R.id.edittext);
         img = findViewById(R.id.search);
         arraylist = new ArrayList<>();
@@ -43,13 +49,35 @@ public class MainActivity extends AppCompatActivity {
         adapter = new Adapter(getApplicationContext(), arraylist);
         recyclerview.setAdapter(adapter);
         findphotos();
-        mblackhole.setOnClickListener(new View.OnClickListener() {
+        mSunset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String query = "blackhole";
+                String query = "Sunset";
                 getSearchimage(query);
             }
         });
+        mNature.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String query = "Nature";
+                getSearchimage(query);
+            }
+        });
+        mSpace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String query = "Space";
+                getSearchimage(query);
+            }
+        });
+        mCars.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String query = "Cars";
+                getSearchimage(query);
+            }
+        });
+
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
