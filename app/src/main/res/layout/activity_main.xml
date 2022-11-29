@@ -24,10 +24,17 @@
         android:padding="10dp"
         android:id="@+id/edittext"
         android:hint="@string/hint"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textStyle="bold"
         android:background="@drawable/edittextbg"
         ></EditText>
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
