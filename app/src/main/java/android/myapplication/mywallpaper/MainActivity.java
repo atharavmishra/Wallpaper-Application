@@ -1,11 +1,14 @@
 package android.myapplication.mywallpaper;
 
+import static androidx.constraintlayout.motion.utils.Oscillator.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -103,9 +106,11 @@ public class MainActivity extends AppCompatActivity {
                 arraylist.clear();
                 if(response.isSuccessful()){
                     arraylist.addAll(response.body().getPhotos());
+                    recyclerview.getRecycledViewPool().clear();
                     adapter.notifyDataSetChanged();
                 }
                 else{
+                    Log.d(TAG, Integer.toString(response.code()));
                     Toast.makeText(getApplicationContext(), "Couldn't get", Toast.LENGTH_SHORT).show();
 
                 }
@@ -125,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 arraylist.clear();
                 if(response.isSuccessful()){
                     arraylist.addAll(response.body().getPhotos());
+                    recyclerview.getRecycledViewPool().clear();
                     adapter.notifyDataSetChanged();
                 }
                 else{
