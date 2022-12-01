@@ -1,4 +1,4 @@
-package android.myapplication.mywallpaper;
+package wallpaper.myapplication.mywallpaper;
 
 import org.junit.Test;
 

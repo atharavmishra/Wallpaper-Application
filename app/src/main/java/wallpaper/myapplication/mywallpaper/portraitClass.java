@@ -1,4 +1,4 @@
-package android.myapplication.mywallpaper;
+package wallpaper.myapplication.mywallpaper;
 
 public class portraitClass {
     String portrait;

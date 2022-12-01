@@ -1,7 +1,8 @@
-package android.myapplication.mywallpaper;
+package wallpaper.myapplication.mywallpaper;
 
 import android.content.Context;
 import android.content.Intent;
+import android.myapplication.mywallpaper.R;
 import android.net.Uri;
 import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;

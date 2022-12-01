@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="wallpaper.myapplication.mywallpaper.MainActivity"
     android:orientation="vertical"
    >
 
@@ -69,11 +69,11 @@
             app:strokeColor="#00FFFF"
             app:strokeWidth="1dp">
             <TextView
+                android:fontFamily="@font/fonts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Nature"
-                android:fontFamily="@font/fonts"
                 android:textColor="#00FFFF"></TextView>
         </com.google.android.material.card.MaterialCardView>
             <com.google.android.material.card.MaterialCardView
@@ -87,11 +87,12 @@
                 app:strokeColor="#00FFFF"
                 app:strokeWidth="1dp">
                 <TextView
+                    android:fontFamily="@font/fonts"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/cardview3"
-                    android:fontFamily="@font/fonts"
 
                     android:textColor="#00FFFF"></TextView>
             </com.google.android.material.card.MaterialCardView>
@@ -113,11 +114,12 @@
                 app:strokeColor="#00FFFF"
                 app:strokeWidth="1dp">
                 <TextView
+                    android:fontFamily="@font/fonts"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Space"
-                    android:fontFamily="@font/fonts"
 
                     android:textColor="#00FFFF"></TextView>
             </com.google.android.material.card.MaterialCardView>
@@ -133,10 +135,11 @@
                 app:strokeColor="#00FFFF"
                 app:strokeWidth="1dp">
                 <TextView
+                    android:fontFamily="@font/fonts"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/fonts"
                     android:text="Cars"
                     android:textColor="#00FFFF"></TextView>
             </com.google.android.material.card.MaterialCardView>

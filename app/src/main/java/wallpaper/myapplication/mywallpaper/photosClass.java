@@ -1,4 +1,4 @@
-package android.myapplication.mywallpaper;
+package wallpaper.myapplication.mywallpaper;
 
 import java.util.ArrayList;
 

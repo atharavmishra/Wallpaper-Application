@@ -1,4 +1,4 @@
-package android.myapplication.mywallpaper;
+package wallpaper.myapplication.mywallpaper;
 
 import static androidx.constraintlayout.motion.utils.Oscillator.TAG;
 
@@ -7,16 +7,15 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.myapplication.mywallpaper.R;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
